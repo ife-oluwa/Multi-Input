@@ -14,7 +14,7 @@ def get_sequences(tokenizer, descriptions):
     return padded
 
 
-model = tf.keras.models.load_model("model_4_acc_0.88")
+model = tf.keras.models.load_model("redo")
 
 
 index_to_class = {0: 'Kitchen & Dining',
