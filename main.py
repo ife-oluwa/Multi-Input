@@ -6,6 +6,7 @@ from typing import Union
 import shutil
 import os
 import cv2
+import uvicorn
 
 
 class description(BaseModel):
@@ -59,3 +60,6 @@ async def predictImageText(description: str = None, file: UploadFile | None = No
             "Description": description,
             "Predicted Category": pred_class
         }
+
+# if __name__ == '__main__':
+#     uvicorn.run(app, host="0.0.0.0", port=80, debug)

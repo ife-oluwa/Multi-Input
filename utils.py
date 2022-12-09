@@ -26,8 +26,8 @@ def image_preprocess(filename, input_size: list):
 
 
 # models
-model_multi = tf.keras.models.load_model("multi_input")
-model_txt = tf.keras.models.load_model("redo")
+model_multi = tf.keras.models.load_model("multi_input.h5")
+model_txt = tf.keras.models.load_model("model_txt.h5")
 model_cv = tf.keras.models.load_model('CV_model')
 
 index_to_class = {0: 'Kitchen & Dining',
